@@ -1,3 +1,9 @@
+"""
+格式:
+缓存: {
+
+}
+"""
 ENGINS = {
     "memcache": {
         "class": "mccache.MemcacheClient",
