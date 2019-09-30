@@ -32,7 +32,6 @@ class Engine(object):
 
     def __init__(self):
         super(Engine, self).__init__()
-        self.save_list = []
 
     @classmethod
     def generate_cache_key(cls, pkey):
@@ -50,7 +49,7 @@ class Engine(object):
         """
         根据子类对象获取key
         """
-        return self.__class__.generate_cache_key(self.id)
+        return self.__class__.generate_cache_key(self.pk)
 
     @classmethod
     def get(cls, pkey):
