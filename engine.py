@@ -90,3 +90,19 @@ class Engine(object):
         for engine_name in cls.save_list:
             engine_obj = app[engine_name]
             engine_obj.put_data(cls, pkey, data, False)
+
+    def put_only_bottom(self):
+        """直接写到存储的最底一层
+        """
+        cls = self.__class__
+        data = self.dumps()
+        pkey = self.get_pkey()
+        engine_obj = app[ENGINS.keys()[-1]]
+        engine_obj.put_data(cls, pkey, data, self.need_insert)
+
+    def delete(self):
+        cls = self.__class__
+        pkey = self.get_pkey()
+        for engine_name in cls.save_list:
+            engine_obj = app[engine_name]
+            engine_obj.delete(pkey)
