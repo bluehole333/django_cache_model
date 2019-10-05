@@ -30,3 +30,17 @@ class MemcacheClient(object):
             self._current.behaviors['tcp_nodelay'] = config['tcp_nodelay']
 
         self.default_timeout = config['default_timeout']
+
+    def put_data(self, model_cls, pkey, data, create_new):
+        # 获取保存的key   类似 key|app.modles.xxx|用户id
+        cache_key = pkey
+        # 先dumps 转成二进制 序列化 1和2是二进制  HIGHEST_PROTOCOL:是2  快而剩空间
+        val = pickle.dumps(data, pickle.HIGHEST_PROTOCOL)
+        if create_new:
+            flag = self._current.add(cache_key, val, self.default_timeout)
+            if not flag:
+                raise Exception('memcache client add failure, cache key: %s' % cache_key)
+        else:
+            flag = self._current.set(cache_key, val, self.default_timeout)
+            if not flag:
+                raise Exception('memcache client set failure, cache key: %s' % cache_key)
