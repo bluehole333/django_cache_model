@@ -69,6 +69,7 @@ class Engine(object):
             # 如果取到了 就不再 遍历
             if data is not None:
                 break
+
         # 如果实在取不到就是没有数据
         if data is None:
             return None
