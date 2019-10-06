@@ -15,6 +15,14 @@ import pickle
 from django.conf import settings
 
 
+def force_str(text, encoding="utf-8", errors='strict'):
+    t_type = type(text)
+    if t_type == str:
+        return text.encode(encoding, errors)
+    
+    return str(text)
+
+
 class MemcacheClient(object):
     def __init__(self, config):
         """
@@ -44,3 +52,10 @@ class MemcacheClient(object):
             flag = self._current.set(cache_key, val, self.default_timeout)
             if not flag:
                 raise Exception('memcache client set failure, cache key: %s' % cache_key)
+
+    def add(self, key, value, timeout=0, min_compress=50):
+        """
+        timeout:过期时间
+        min_compress:压缩
+        """
+        return self._current.set(force_str(key), value, timeout or self.default_timeout, min_compress)

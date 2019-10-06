@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="889468f7-a7af-4e87-97c2-bf2d33b137a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/memcache.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/memcache.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../secret/secret/client/mccache.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+            <state relative-caret-position="204">
+              <caret line="16" selection-start-line="16" selection-end-line="22" selection-end-column="20" />
               <folding>
                 <element signature="e#189#202#0" expanded="true" />
                 <element signature="e#526#1072#0" />
@@ -41,8 +40,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/memcache.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+            <state relative-caret-position="53">
+              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+              <folding>
+                <element signature="e#303#870#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,6 +64,7 @@
       <find>save_list</find>
       <find>.id</find>
       <find>put_data</find>
+      <find>force_str</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -174,12 +177,12 @@
       <workItem from="1569734818019" duration="146000" />
       <workItem from="1569850243439" duration="497000" />
       <workItem from="1570274123447" duration="481000" />
-      <workItem from="1570280420143" duration="760000" />
+      <workItem from="1570280420143" duration="1254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5665000" />
+    <option name="totallyTimeSpent" value="6159000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="811" extended-state="6" />
@@ -289,8 +292,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../secret/secret/client/mccache.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+        <state relative-caret-position="204">
+          <caret line="16" selection-start-line="16" selection-end-line="22" selection-end-column="20" />
           <folding>
             <element signature="e#189#202#0" expanded="true" />
             <element signature="e#526#1072#0" />
@@ -300,8 +303,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/memcache.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+        <state relative-caret-position="53">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="e#303#870#0" />
+          </folding>
         </state>
       </provider>
     </entry>
