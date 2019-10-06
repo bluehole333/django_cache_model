@@ -19,7 +19,7 @@ def force_str(text, encoding="utf-8", errors='strict'):
     t_type = type(text)
     if t_type == str:
         return text.encode(encoding, errors)
-    
+
     return str(text)
 
 
@@ -59,3 +59,24 @@ class MemcacheClient(object):
         min_compress:压缩
         """
         return self._current.set(force_str(key), value, timeout or self.default_timeout, min_compress)
+
+    def get_data(self, model_cls, pkey):
+        """
+        model_cls:  model类对象
+        pkey:       model对象主键
+        """
+        val = self._current.get(pkey)
+        if val is None:
+            return None
+
+        return pickle.loads(val)
+
+    def get(self, key, default=None):
+        try:
+            val = self._current.get(force_str(key))
+        except:
+            val = self._current.get(force_str(key))
+        if val is None:
+            return default
+
+        return val
