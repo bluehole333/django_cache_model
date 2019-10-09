@@ -80,3 +80,22 @@ class MemcacheClient(object):
             return default
 
         return val
+
+    def set(self, key, value, timeout=0, min_compress=50):
+        try:
+            return self._current.set(force_str(key), value, timeout or self.default_timeout, min_compress)
+        except:
+            return self._current.set(force_str(key), value, timeout or self.default_timeout, min_compress)
+
+    def delete(self, key):
+        try:
+            try:
+                val = self._current.delete(force_str(key))
+            except:
+                val = self._current.delete(force_str(key))
+            if type(val) == bool:
+                val = 1
+        except:
+            val = 0
+
+        return val
