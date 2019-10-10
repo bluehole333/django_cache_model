@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="889468f7-a7af-4e87-97c2-bf2d33b137a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/memcache.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/memcache.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,19 +16,7 @@
         <entry file="file://$PROJECT_DIR$/client/memcache.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="362">
-              <caret line="86" column="14" lean-forward="true" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../secret/secret/client/mccache.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="105" column="18" lean-forward="true" selection-start-line="86" selection-start-column="4" selection-end-line="105" selection-end-column="18" />
-              <folding>
-                <element signature="e#189#202#0" expanded="true" />
-              </folding>
+              <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
             </state>
           </provider>
         </entry>
@@ -165,12 +152,12 @@
       <workItem from="1570274123447" duration="481000" />
       <workItem from="1570280420143" duration="1977000" />
       <workItem from="1570357622507" duration="2304000" />
-      <workItem from="1570633867408" duration="135000" />
+      <workItem from="1570633867408" duration="246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9321000" />
+    <option name="totallyTimeSpent" value="9432000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="821" extended-state="6" />
@@ -294,8 +281,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../secret/secret/client/mccache.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="105" column="18" lean-forward="true" selection-start-line="86" selection-start-column="4" selection-end-line="105" selection-end-column="18" />
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#189#202#0" expanded="true" />
           </folding>
@@ -305,7 +292,7 @@
     <entry file="file://$PROJECT_DIR$/client/memcache.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
-          <caret line="86" column="14" lean-forward="true" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="14" />
+          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
         </state>
       </provider>
     </entry>

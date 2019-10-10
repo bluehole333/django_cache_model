@@ -99,3 +99,21 @@ class MemcacheClient(object):
             val = 0
 
         return val
+
+    def get_multi(self, keys):
+        """
+        获取多个key 返回字典类型  {key:value,....}
+        """
+        return self._current.get_multi(map(force_str, keys))
+
+    def incr(self, key, delta=1):
+        return self._current.incr(key, delta)
+
+    def decr(self, key, delta=1):
+        """
+        自增变量加上delta，默认加delta = 1
+        """
+        return self._current.decr(key, delta)
+
+    def current(self):
+        return self._current
