@@ -3,7 +3,7 @@
 memcache封装 客户端
 """
 try:
-    import memcache, bmemcached
+    import memcache
 
     _pylibmc = False
 except ImportError as e:
@@ -12,7 +12,6 @@ except ImportError as e:
     _pylibmc = True
 
 import pickle
-from django.conf import settings
 
 
 def force_str(text, encoding="utf-8", errors='strict'):
@@ -29,8 +28,6 @@ class MemcacheClient(object):
         servers is a string like ["121.199.7.23:11211", "42.121.145.76:11211"]
         """
         self._current = memcache.Client(config['servers'])
-        # 阿里云cache
-        # self._current = bmemcached.Client(('c2d22a186278499f.m.cnhzaliqshpub001.ocs.aliyuncs.com:11211', ), 'c2d22a186278499f', 'Lx19901008')
 
         # 如果用的是pylibmc库 添加配置
         if _pylibmc:
