@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="889468f7-a7af-4e87-97c2-bf2d33b137a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/redis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/redis.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/redis.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/redis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state relative-caret-position="488">
+              <caret line="69" column="11" lean-forward="true" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
               <folding>
                 <element signature="e#45#58#0" expanded="true" />
               </folding>
@@ -28,8 +27,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../secret/secret/client/redis_client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
-              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="556">
+              <caret line="39" selection-start-line="39" selection-end-line="147" selection-end-column="18" />
+              <folding>
+                <element signature="e#53#66#0" expanded="true" />
+                <element signature="e#956#3937#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,6 +53,7 @@
       <find>.id</find>
       <find>put_data</find>
       <find>force_str</find>
+      <find>def set</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,15 +172,15 @@
       <workItem from="1570280420143" duration="1977000" />
       <workItem from="1570357622507" duration="2304000" />
       <workItem from="1570633867408" duration="246000" />
-      <workItem from="1570803165128" duration="166000" />
+      <workItem from="1570803165128" duration="3018000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9598000" />
+    <option name="totallyTimeSpent" value="12450000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="822" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="814" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
@@ -299,15 +303,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../secret/secret/client/redis_client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="556">
+          <caret line="39" selection-start-line="39" selection-end-line="147" selection-end-column="18" />
+          <folding>
+            <element signature="e#53#66#0" expanded="true" />
+            <element signature="e#956#3937#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/virtualenvs/py36/lib/python3.6/site-packages/redis/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="346" column="26" lean-forward="true" selection-start-line="346" selection-start-column="26" selection-end-line="346" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/redis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="488">
+          <caret line="69" column="11" lean-forward="true" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
           <folding>
             <element signature="e#45#58#0" expanded="true" />
           </folding>
