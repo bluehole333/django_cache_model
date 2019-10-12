@@ -131,3 +131,6 @@ class RedisClient(object):
             val = 0
 
         return val
+
+    def current(self):
+        return self._current
