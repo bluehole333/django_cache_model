@@ -22,7 +22,7 @@ def import_by_name(name):
 
 # 获取存储实例
 app = {}
-for engine_name, engine in ENGINS.iteritems():
+for engine_name, engine in ENGINS.items():
     engine_class = engine['class']
     engine_conf = engine['config']
     app[engine_name] = import_by_name(engine_class)(engine_conf)
