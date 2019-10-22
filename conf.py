@@ -12,7 +12,7 @@ ENGINS = {
                 "127.0.0.1:11211",
             ],
             "default_timeout": 600,
-            "tcp_nodelay": True,
+            "debug": False,
         }
     },
     "redis": {

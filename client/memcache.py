@@ -2,16 +2,8 @@
 """
 memcache封装 客户端
 """
-try:
-    import memcache
-
-    _pylibmc = False
-except ImportError as e:
-    import pylibmc as memcache
-
-    _pylibmc = True
-
 import pickle
+import memcache
 
 
 def force_str(text, encoding="utf-8", errors='strict'):
@@ -27,14 +19,8 @@ class MemcacheClient(object):
         """
         servers is a string like ["121.199.7.23:11211", "42.121.145.76:11211"]
         """
-        self._current = memcache.Client(config['servers'])
-
-        # 如果用的是pylibmc库 添加配置
-        if _pylibmc:
-            self._current.behaviors['distribution'] = 'consistent'
-            self._current.behaviors['tcp_nodelay'] = config['tcp_nodelay']
-
-        self.default_timeout = config['default_timeout']
+        self._current = memcache.Client(config['servers'], debug=config.get('default_timeout', False))
+        self.default_timeout = config.get('default_timeout', 0)
 
     def put_data(self, model_cls, pkey, data, create_new):
         # 获取保存的key   类似 key|app.modles.xxx|用户id
